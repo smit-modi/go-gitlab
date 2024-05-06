@@ -971,7 +971,9 @@ type PushEvent struct {
 	Before       string `json:"before"`
 	After        string `json:"after"`
 	Ref          string `json:"ref"`
+	RefProtected bool   `json:"ref_protected"`
 	CheckoutSHA  string `json:"checkout_sha"`
+	Message      string `json:"message"`
 	UserID       int    `json:"user_id"`
 	UserName     string `json:"user_name"`
 	UserUsername string `json:"user_username"`
